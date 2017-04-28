@@ -296,21 +296,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1211641257423332
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4757435874878932}
-  m_Layer: 0
-  m_Name: follow
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1242617191245744
 GameObject:
   m_ObjectHideFlags: 1
@@ -1030,9 +1015,7 @@ GameObject:
   - component: {fileID: 95012509213482932}
   - component: {fileID: 54004126195691954}
   - component: {fileID: 136237236661428632}
-  - component: {fileID: 114760555281128914}
   - component: {fileID: 114713396706412568}
-  - component: {fileID: 114358798107779098}
   m_Layer: 0
   m_Name: Beta
   m_TagString: Untagged
@@ -1280,11 +1263,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1342815853176008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.07, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4503105256052870}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4272730410784816
 Transform:
@@ -1586,13 +1569,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963091221105278}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.075}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4805007697697128}
-  - {fileID: 4420575887638748}
   - {fileID: 4265892816084574}
-  - {fileID: 4757435874878932}
+  - {fileID: 4420575887638748}
+  - {fileID: 4805007697697128}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1857,19 +1839,6 @@ Transform:
   m_Father: {fileID: 4948271178751450}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4757435874878932
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1211641257423332}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.07, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4503105256052870}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4761620016327524
 Transform:
   m_ObjectHideFlags: 1
@@ -1940,7 +1909,7 @@ Transform:
   - {fileID: 4934735665080362}
   - {fileID: 4967550522889986}
   m_Father: {fileID: 4503105256052870}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4808902246300976
 Transform:
@@ -2170,28 +2139,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114358798107779098
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1963091221105278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e189725cd50d5e4d9685014e9943197, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  on: 1
-  onlyInPlayMode: 1
-  sceneViewFollowers:
-  - enable: 1
-    positionOffset: {x: 0, y: 5, z: 0}
-    enableFixedRotation: 1
-    fixedRotation: {x: 90, y: 0, z: 0}
-    targetTransform: {fileID: 4503105256052870}
-    size: 5.81
-    orthographic: 1
-    sceneViewIndex: 0
 --- !u!114 &114713396706412568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2214,21 +2161,6 @@ MonoBehaviour:
     size: 5.81
     orthographic: 1
     sceneViewIndex: 0
---- !u!114 &114760555281128914
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1963091221105278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abfa1be1c5969e34692f2795f262caaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 95012509213482932}
-  directionDampTime: 0.25
-  directionSpeed: 3
-  gamecam: {fileID: 0}
 --- !u!136 &136237236661428632
 CapsuleCollider:
   m_ObjectHideFlags: 1
